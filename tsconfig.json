@@ -30,7 +30,8 @@
     "next.config.js",
     "next.config.js",
     "src/app/(commonLayout)/page.jsx",
-    ".next/types/app/page.tsx"
+    ".next/types/app/page.tsx",
+    "tailwind.config.js"
   ],
   "exclude": ["node_modules"]
 }

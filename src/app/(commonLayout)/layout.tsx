@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Navbar from "./components/Shaared/Navbar/Navbar";
 
 export const metadata: Metadata = {
   title: "Snap Basket",
@@ -12,7 +13,7 @@ export default function CommonLayout({
 }>) {
   return (
     <div>
-      Common Navbar
+      <Navbar></Navbar>
       {children}
     </div>
   );
