@@ -1,16 +1,19 @@
 import Link from "next/link";
+import nexiosInstance from "../../../../nexios.config";
 
 const Products = async () => {
-  const res = await fetch("http://localhost:5000/api/v1/products");
-  const { data } = await res.json();
+  const {data} : any = await nexiosInstance.get("/products", {
+    cache: "no-store",
+  });
 
-  // console.log(data);
+  console.log(data);
+
 
   return (
     <div className="my-5">
       <h1 className="text-center my-10 text-3xl font-bold">All Products</h1>
       <div className="flex flex-wrap gap-4 justify-center ">
-        {data?.map((item: any) => (
+        {data?.data?.map((item: any) => (
           <div
             key={item?._id}
             className="card glass w-96 hover:scale-105 transition-transform duration-300"
