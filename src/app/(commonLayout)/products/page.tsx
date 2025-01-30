@@ -1,13 +1,12 @@
+import nexiosInstance from "@/config/nexios.config";
 import Link from "next/link";
-import nexiosInstance from "../../../../nexios.config";
 
 const Products = async () => {
-  const {data} : any = await nexiosInstance.get("/products", {
+  const { data }: any = await nexiosInstance.get("/products", {
     cache: "no-store",
   });
 
   console.log(data);
-
 
   return (
     <div className="my-5">

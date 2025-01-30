@@ -1,4 +1,4 @@
-import nexiosInstance from "../../../../../nexios.config";
+import nexiosInstance from "@/config/nexios.config";
 
 const ProductsDetailsPage = async ({
   params,
