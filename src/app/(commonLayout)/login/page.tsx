@@ -1,7 +1,8 @@
 import React from "react";
+import GoogleLoginBtn from "../components/Shaared/GoogleLoginBtn";
 
-const Login = () => {
-  return <div>this is login</div>;
+const LoginPage = () => {
+  return <GoogleLoginBtn></GoogleLoginBtn>;
 };
 
-export default Login;
+export default LoginPage;
